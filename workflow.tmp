@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE office:document-content PUBLIC "-//OpenOffice.org//DTD OfficeDocument 2.0//EN" "office.dtd"> 
+ 
+<?xtpipes file="oo-text.4xt" ?> 
+<office:document-content  
+xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"  
+xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"  
+xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0"  
+xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"  
+xmlns:fo="http://www.w3.org/1999/XSL/Format"  
+xmlns:xlink="http://www.w3.org/1999/xlink"  
+xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"  
+xmlns:dc="http://purl.org/dc/elements/1.1/"  
+xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0"  
+xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" 
+xmlns:svg="http://www.w3.org/2000/svg"  
+xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0"  
+xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0"  
+xmlns:math="http://www.w3.org/1998/Math/MathML"  
+xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0"  
+xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0"  
+xmlns:ooo="http://openoffice.org/2004/office"  
+xmlns:ooow="http://openoffice.org/2004/writer"  
+xmlns:oooc="http://openoffice.org/2004/calc"  
+xmlns:dom="http://www.w3.org/2001/xml-events"  
+xmlns:xforms="http://www.w3.org/2002/xforms"  
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"  
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0"  
+xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" 
+xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" 
+office:version="1.0" > 
+<office:automatic-styles> <?tex4ht-lg file="workflow.lg" ?> <style:style style:name="Figure" style:family="section"> 
+<style:section-properties fo:margin-left="0.25in" fo:margin-right="0.25in" style:editable="true"> 
+<style:columns fo:column-count="0" fo:column-gap="0in"/> </style:section-properties> </style:style> 
+<style:page-layout style:name="Standard-page-layout"> 
+<style:page-layout-properties fo:page-width="597.50787pt" fo:page-height="845.04684pt" style:num-format="1" style:print-orientation="portrait" fo:margin-top="0.7874in" fo:margin-bottom="0.7874in" fo:margin-left="0.7874in" fo:margin-right="0.7874in" style:writing-mode="lr-tb" style:footnote-max-height="0in"> 
+<style:footnote-sep style:width="0.0071in" style:distance-before-sep="0.0398in" style:distance-after-sep="0.0398in" style:adjustment="left" style:rel-width="25%" style:color="#000000"/> 
+</style:page-layout-properties> 
+<style:header-style/> <style:footer-style/> </style:page-layout> 
+ 
+</office:automatic-styles>     <office:body><office:text>
+<!--begin maketitle-->
+
+
+<text:p text:style-name="Title" ><text:span 
+text:style-name="cmss-17x-x-120">Data analysis workflow for morphological profiling</text:span></text:p>
+<text:p text:style-name="author" ><text:span 
+text:style-name="cmss-12x-x-120">Sundaramurthy Lab</text:span></text:p>
+<text:p text:style-name="date" ><text:span 
+text:style-name="cmss-12x-x-120">May 2, 2016</text:span></text:p>
+   <!--end maketitle-->
+   <!--start of section--><text:h text:style-name="Heading-2" text:outline-level="2" ><text:span text:style-name="section" >1    </text:span><t4htlink 
+href="#x1-10001" name="x1-10001"></t4htlink>Image analysis and feature extraction</text:h> 
+
+<!--l. 17--><text:p text:style-name="Text-body">The primary software used for image analysis of the fluorescent microscopy images is CellProfiler.
+The image analysis pipeline typically involves the following steps:
+      </text:p> 
+<text:list text:style-name="Enumerate" > 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >Rescaling Intensities
+      </text:p> 
+</text:list-item> 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >Illumination Correction Calculate and Apply
+      </text:p> 
+</text:list-item> 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >Enhance/ Suppress features for easier segmentation of the small puncta
+      </text:p> 
+</text:list-item> 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >Identification of primary object (typically nucleus), secondary object (typically cell),
+      other cellular organs (like endosomes, autophagosomes, lysosomes, infectious agents,
+      etc.)
+      </text:p> 
+</text:list-item> 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >Identify colocalization of different objects
+      </text:p> 
+</text:list-item> 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >Relate objects
+
+      </text:p> 
+</text:list-item> 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >Measure features (Area/Shape, intensities, spatial spread, etc) of the objects identified.
+      Also calculate per cell mean values for all the object features
+      </text:p> 
+</text:list-item> 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >Export the imaged of objects identified
+      </text:p> 
+</text:list-item> 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >Export the measurements</text:p> 
+</text:list-item> 
+</text:list > 
+
+<!--l. 29--><text:p text:style-name="Text-body">MotionTracking is also regularly used. FIJI is used for 3D segmentation.
+   </text:p> 
+<!--end of section--><!--start of section--><text:h text:style-name="Heading-2" text:outline-level="2" ><text:span text:style-name="section" >2    </text:span><t4htlink 
+href="#x1-20002" name="x1-20002"></t4htlink>Image quality control</text:h> 
+
+<!--l. 31--><text:p text:style-name="Text-body">
+      </text:p> 
+<text:list text:style-name="Enumerate" > 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >Flag images based on focus score to remove out of focus images
+      </text:p> 
+</text:list-item> 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >Plot plate maps to see if the plate variability exists</text:p> 
+</text:list-item> 
+</text:list > 
+
+<!--l. 36--><text:p text:style-name="Text-body">
+   </text:p> 
+<!--end of section--><!--start of section--><text:h text:style-name="Heading-2" text:outline-level="2" ><text:span text:style-name="section" >3    </text:span><t4htlink 
+href="#x1-30003" name="x1-30003"></t4htlink>Data cleaning</text:h> 
+
+<!--l. 37--><text:p text:style-name="Text-body">
+      </text:p> 
+<text:list text:style-name="Enumerate" > 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >Different experiments conducted at different times will have different nomenclature used
+      (like dapi, DAPI, Dapi, identify these differences and replace with one nomenclature)
+      </text:p> 
+</text:list-item> 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >Different image analysis software will result in their own nomenclature of the feature
+      names, like in MotionTracking the feature names have special symbols like <!--l. 39--><draw:frame draw:style-name="mml-inline" draw:name="mobj-2" 
+text:anchor-type="as-char" draw:z-index="0" ><draw:object 
+xlink:href="./workflow-m2" 
+xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" /></draw:frame> 
+      which are not handled well by R. So those column names are renamed to get rid of
+      special symbols
+
+      </text:p> 
+</text:list-item> 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >Sometimes additional metadata features have to be added to the data files like the
+      infection status in the infection study that is added based on the bacterial count. Also
+      if binning analysis has to be done, the new metadata column is created at this stage
+      </text:p> 
+</text:list-item> 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >There are lot of NAs in the data. We need to get rid of them
+      </text:p> 
+<text:p text:style-name="Inside-enumerate" >     Get rid of those columns which contain just NA
+      </text:p> 
+<text:p text:style-name="Inside-enumerate" >     Get rid of those rows with more than some percentage of NAs, lets say <!--l. 43--><draw:frame draw:style-name="mml-inline" draw:name="mobj-3" 
+text:anchor-type="as-char" draw:z-index="0" ><draw:object 
+xlink:href="./workflow-m3" 
+xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" /></draw:frame> 
+      NAs
+      </text:p> 
+<text:p text:style-name="Inside-enumerate" >     There are some NAs that are converted to 0 (like bacterial features in non-infected
+      cells)
+      </text:p> 
+</text:list-item> 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >Features with 0 standard deviation are removed</text:p> 
+</text:list-item> 
+</text:list > 
+
+<!--l. 48--><text:p text:style-name="Text-body">
+   </text:p> 
+<!--end of section--><!--start of section--><text:h text:style-name="Heading-2" text:outline-level="2" ><text:span text:style-name="section" >4    </text:span><t4htlink 
+href="#x1-40004" name="x1-40004"></t4htlink>Normalize features</text:h> 
+
+<!--l. 49--><text:p text:style-name="Text-body">
+      </text:p> 
+<text:list text:style-name="Enumerate" > 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >Robust Normalization with the formula<text:line-break 
+/><!--l. 51--><draw:frame draw:style-name="mml-inline" draw:name="mobj-4" 
+text:anchor-type="as-char" draw:z-index="0" ><draw:object 
+xlink:href="./workflow-m4" 
+xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" /></draw:frame> 
+      <text:line-break 
+/>is done typically. It is more resistant to outliers.
+      </text:p> 
+</text:list-item> 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >Classical Z-scoring is required in conditions when the robust normalization results in
+      NAs (which regularly happen in the conditions where median value of a feature is zero,
+      like bacterial counts). In those times we resort to the following formula<text:line-break 
+/><!--l. 54--><draw:frame draw:style-name="mml-inline" draw:name="mobj-5" 
+text:anchor-type="as-char" draw:z-index="0" ><draw:object 
+xlink:href="./workflow-m5" 
+xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" /></draw:frame> 
+      <text:line-break 
+/></text:p> 
+</text:list-item> 
+</text:list > 
+
+
+<!--l. 57--><text:p text:style-name="Text-body">
+   </text:p> 
+<!--end of section--><!--start of section--><text:h text:style-name="Heading-2" text:outline-level="2" ><text:span text:style-name="section" >5    </text:span><t4htlink 
+href="#x1-50005" name="x1-50005"></t4htlink>Transform features</text:h> 
+
+<!--l. 58--><text:p text:style-name="Text-body">The feature Transformations like principle component analysis and factor analysis have been tried
+and did not yield favorable results. <text:line-break 
+/>The normalized features gives a good enough transformation of the data.
+</text:p> 
+<!--l. 61--><text:p text:style-name="Text-body">
+   </text:p> 
+<!--end of section--><!--start of section--><text:h text:style-name="Heading-2" text:outline-level="2" ><text:span text:style-name="section" >6    </text:span><t4htlink 
+href="#x1-60006" name="x1-60006"></t4htlink>Correct for systematic effects</text:h> 
+
+<!--l. 62--><text:p text:style-name="Text-body">
+      </text:p> 
+<text:list text:style-name="Enumerate" > 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >Plot plate layouts for different known features and visualize the well variability in the
+      plate, if high throughput. We have rarely found a systemic bias in plates.</text:p> 
+</text:list-item> 
+</text:list > 
+
+<!--l. 66--><text:p text:style-name="Text-body">
+   </text:p> 
+<!--end of section--><!--start of section--><text:h text:style-name="Heading-2" text:outline-level="2" ><text:span text:style-name="section" >7    </text:span><t4htlink 
+href="#x1-70007" name="x1-70007"></t4htlink>Select features</text:h> 
+
+<!--l. 67--><text:p text:style-name="Text-body">
+      </text:p> 
+<text:list text:style-name="Enumerate" > 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >The features are selected based on non-redundency. Only one feature out of the set of
+      features with redundancy more than 0.90 (pearson correlation coefficient) is selected.
+      The  feature  that  minimizes  redundancy  with  every  other  feature  with  correlation
+      coefficient less than 0.90 is selected from a set of redundant features.
+      </text:p> 
+</text:list-item> 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >The features are tagged as those belonging to either of the two categories, metadata
+      space and features space. So that vectorized mathematical operations can be performed
+      on the feature space while grouping the data based on one or multiple metadata columns.
+      </text:p> 
+</text:list-item> 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >Since we have to regularly deal with different plates with different readouts in the
+      same experiment, we mark the common features as &#x201D;shared features&#x201D; and others as
+      &#x201D;unshared features&#x201D;. Shared features are compared across different plates, and compared
+      for reproducibility. If reproducibility is confirmed, then the unshared features can be
+      compared. These comparisons are typically visualized in the form of boxplots.</text:p> 
+</text:list-item> 
+</text:list > 
+
+
+<!--l. 73--><text:p text:style-name="Text-body">
+   </text:p> 
+<!--end of section--><!--start of section--><text:h text:style-name="Heading-2" text:outline-level="2" ><text:span text:style-name="section" >8    </text:span><t4htlink 
+href="#x1-80008" name="x1-80008"></t4htlink>Create per-well profiles</text:h> 
+
+<!--l. 74--><text:p text:style-name="Text-body">
+      </text:p> 
+<text:list text:style-name="Enumerate" > 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >The individual sub-cellular object is collapsed to per cell values by taking median or
+      sum as appropriate (for instance, median in case of MeanIntensity, sum in case of
+      IntegralIntensity)
+      </text:p> 
+</text:list-item> 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >Next the per-cell values are calculated by taking the median of all the values in a
+      specific condition. If the data set has multiple redundant conditions like different siRNAs,
+      then they are collapsed per siRNA treatment and accessed for per siRNA changes in
+      phenotypes.
+      </text:p> 
+</text:list-item> 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >If a metadata column for binning analysis was made, then the collapsing is done using
+      median value per bin per condition.</text:p> 
+</text:list-item> 
+</text:list > 
+
+<!--l. 80--><text:p text:style-name="Text-body">
+   </text:p> 
+<!--end of section--><!--start of section--><text:h text:style-name="Heading-2" text:outline-level="2" ><text:span text:style-name="section" >9    </text:span><t4htlink 
+href="#x1-90009" name="x1-90009"></t4htlink>Measure similarity between profiles</text:h> 
+
+<!--l. 81--><text:p text:style-name="Text-body">
+      </text:p> 
+<text:list text:style-name="Enumerate" > 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >The magnitude of phenotype is visualized in box plots, and density plots (or heat maps
+      if conditions to be analyzed are a lot).
+      </text:p> 
+</text:list-item> 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >Similarity between profiles is measured using Pearson correlation coefficient
+      </text:p> 
+</text:list-item> 
+
+      <text:list-item>
+      <text:p text:style-name="Inside-enumerate" >The quantification of the significance of the difference between different conditions and
+      control is done by tests of significance (mostly students T test, and Kolmogorov-Smirnov
+      test). This step puts number to the significance that we already see in the box plots.
+      Inferences of an increase or decrease are made from the box plots plotted previously.</text:p> 
+</text:list-item> 
+</text:list > 
+
+
+<!--l. 87--><text:p text:style-name="Text-body">
+   </text:p> 
+<!--end of section--><!--start of section--><text:h text:style-name="Heading-2" text:outline-level="2" ><text:span text:style-name="section" >10    </text:span><t4htlink 
+href="#x1-1000010" name="x1-1000010"></t4htlink>Integrate different plates</text:h> 
+
+<!--l. 88--><text:p text:style-name="Text-body">Spectral limitations allow for only few channels to be visualized in the biological sample, greatly
+limiting simultaneous visualization of the different sub-cellular organelles. In order to
+overcome this problem at the data processing stage, data points need to be plotted in one
+plot.<text:line-break 
+/>Permutation testing is used to define the null distribution and alternate distribution. then exact
+p-value is calculated. This p-value for different pair of assays is amenable for comparison and is
+plotted on the scatter plot. This plot explains when the two set of assays are behaving in same
+way, in other words, if same treatment results in similar changes in two different cellular
+organelles.
+   </text:p> 
+<!--end of section--></office:text></office:body> 
+</office:document-content>
+
+

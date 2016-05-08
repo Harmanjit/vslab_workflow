@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE math:math PUBLIC "-//W3C//DTD MathML 2.0//EN" "math.dtd"> 
+ <?xtpipes file="oo-math.4xt" ?> 
+<!-- workflow-m4 by TeX4ht from workflow.tex line 51 2009-06-11-09:32 
+(http://www.cse.ohio-state.edu/~gurari/TeX4ht/) --> 
+ <math:math 
+ xmlns:math="http://www.w3.org/1998/Math/MathML" 
+xmlns:xlink="http://www.w3.org/1999/xlink"  
+><math:mi 
+>z</math:mi><math:msub><math:mrow 
+><math:mi 
+>-</math:mi><math:mi 
+>s</math:mi><math:mi 
+>c</math:mi><math:mi 
+>o</math:mi><math:mi 
+>r</math:mi><math:mi 
+>e</math:mi></math:mrow><math:mrow 
+><math:mi 
+>N</math:mi><math:mi 
+>C</math:mi></math:mrow></math:msub 
+> <math:mo 
+ >=</math:mo> <math:mfrac><math:mrow 
+><math:mi 
+>V</math:mi> <math:mi 
+>a</math:mi><math:mi 
+>l</math:mi><math:mi 
+>u</math:mi><math:mi 
+>e</math:mi><math:mo 
+ >&#x2212;</math:mo><math:mi 
+>M</math:mi><math:mi 
+>e</math:mi><math:mi 
+>d</math:mi><math:mi 
+>i</math:mi><math:mi 
+>a</math:mi><math:mi 
+>n</math:mi><math:mrow ><math:mo 
+ >[</math:mo><math:mrow><math:mi 
+>V</math:mi> <math:mi 
+>a</math:mi><math:mi 
+>l</math:mi><math:mi 
+>u</math:mi><math:mi 
+>e</math:mi><math:msub><math:mrow 
+><math:mi 
+>s</math:mi></math:mrow><math:mrow 
+><math:mi 
+>N</math:mi><math:mi 
+>C</math:mi></math:mrow></math:msub 
+></math:mrow><math:mo 
+ >]</math:mo></math:mrow></math:mrow> 
+            <math:mrow 
+><math:mi 
+>M</math:mi><math:mi 
+>A</math:mi><math:msub><math:mrow 
+><math:mi 
+>D</math:mi></math:mrow><math:mrow 
+><math:mi 
+>N</math:mi><math:mi 
+>C</math:mi></math:mrow></math:msub 
+></math:mrow></math:mfrac>            </math:math>
